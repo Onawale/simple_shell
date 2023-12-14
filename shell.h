@@ -12,22 +12,22 @@
 #include <fcntl.h>
 #include <errno.h>
 
-/* for read/write buffers */
+/* For read/write buffers */
 #define READ_BUF_SIZE 1024
 #define WRITE_BUF_SIZE 1024
 #define BUF_FLUSH -1
 
-/* for command chaining */
+/* For command chaining */
 #define CMD_NORM	0
 #define CMD_OR		1
 #define CMD_AND		2
 #define CMD_CHAIN	3
 
-/* for convert_number() */
+/* For convert_number() */
 #define CONVERT_LOWERCASE	1
 #define CONVERT_UNSIGNED	2
 
-/* 1 if using system getline() */
+/* 1 If using system getline() */
 #define USE_GETLINE 0
 #define USE_STRTOK 0
 
@@ -39,7 +39,7 @@ extern char **environ;
 
 /**
  * struct liststr - singly linked list
- * @num: the number field
+ * @num: The number field
  * @str: a string
  * @next: points to the next node
  */
@@ -51,7 +51,7 @@ typedef struct liststr
 } list_t;
 
 /**
- *struct passinfo - contains pseudo-arguements to pass into a function,
+ *struct passinfo - It contains pseudo-arguements to pass into a function,
  *		allowing uniform prototype for function pointer struct
  *@arg: a string generated from getline containing arguements
  *@argv: an array of strings generated from arg

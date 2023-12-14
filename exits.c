@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- **_strncpy - copies a string
+ **_strncpy - it copies a string
  *@dest: the destination string to be copied to
  *@src: the source string
  *@n: the amount of characters to be copied
@@ -9,18 +9,18 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, j;
+	int u, j;
 	char *s = dest;
 
-	i = 0;
-	while (src[i] != '\0' && i < n - 1)
+	u = 0;
+	while (src[u] != '\0' && u < n - 1)
 	{
-		dest[i] = src[i];
-		i++;
+		dest[u] = src[u];
+		u++;
 	}
-	if (i < n)
+	if (u < n)
 	{
-		j = i;
+		j = u;
 		while (j < n)
 		{
 			dest[j] = '\0';
@@ -39,26 +39,26 @@ char *_strncpy(char *dest, char *src, int n)
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, j;
+	int u, j;
 	char *s = dest;
 
-	i = 0;
+	u = 0;
 	j = 0;
-	while (dest[i] != '\0')
-		i++;
+	while (dest[u] != '\0')
+		u++;
 	while (src[j] != '\0' && j < n)
 	{
-		dest[i] = src[j];
-		i++;
+		dest[u] = src[j];
+		u++;
 		j++;
 	}
 	if (j < n)
-		dest[i] = '\0';
+		dest[u] = '\0';
 	return (s);
 }
 
 /**
- **_strchr - locates a character in a string
+ **_strchr - it locates a character in a string
  *@s: the string to be parsed
  *@c: the character to look for
  *Return: (s) a pointer to the memory area s

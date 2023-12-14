@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * add_node - adds a node to the start of the list
- * @head: address of pointer to head node
- * @str: str field of node
+ * add_node - Adds a node to the start of the list
+ * @head: The address of pointer to head node
+ * @str: String field of node
  * @num: node index used by history
  *
  * Return: size of list
@@ -136,7 +136,7 @@ int delete_node_at_index(list_t **head, unsigned int index)
 
 /**
  * free_list - frees all nodes of a list
- * @head_ptr: address of pointer to head node
+ * @head_ptr: The address of pointer to head node
  *
  * Return: void
  */

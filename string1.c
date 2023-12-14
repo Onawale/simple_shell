@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _strcpy - copies a string
+ * _strcpy - It copies a string
  * @dest: the destination
  * @src: the source
  *
@@ -65,7 +65,7 @@ void _puts(char *str)
 }
 
 /**
- * _putchar - writes the character c to stdout
+ * _putchar - It writes the character c to stdout
  * @c: The character to print
  *
  * Return: On success 1.

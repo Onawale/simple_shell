@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * get_environ - returns the string array copy of our environ
+ * get_environ - returns the string array copy of our environment
  * @info: Structure containing potential arguments. Used to maintain
  *          constant function prototype.
- * Return: Always 0
+ * Return: 0 Always
  */
 char **get_environ(info_t *info)
 {
